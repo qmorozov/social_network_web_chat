@@ -1,0 +1,52 @@
+@use '../../../../styles/variables';
+
+.SearchInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: variables.rem(28px);
+  margin: 0 0 variables.rem(32px) 0;
+  background: #fff;
+
+  .BtnBack {
+    display: flex;
+    padding: variables.rem(2px) variables.rem(6px) variables.rem(2px)
+      variables.rem(4px);
+    cursor: pointer;
+    border: none;
+  }
+
+  input {
+    flex-grow: 1;
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-size: variables.rem(14px);
+    letter-spacing: 0.02em;
+    color: variables.$blue-800;
+    padding: 0 variables.rem(16px);
+
+    &::placeholder {
+      display: flex;
+      align-items: center;
+      font-size: inherit;
+      font-weight: 200;
+      text-align: center;
+      letter-spacing: inherit;
+      color: inherit;
+    }
+  }
+}
+
+.ActionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.BtnSearch {
+  width: variables.rem(56px);
+  height: variables.rem(56px);
+  padding: 0;
+  background-color: #f6f6fe;
+}

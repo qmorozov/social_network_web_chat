@@ -1,0 +1,78 @@
+@import '../../../../styles/variables';
+
+.SearchBlock {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem 0;
+  background-color: #fff;
+
+  input {
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    line-height: 1;
+    color: $blue-700;
+  }
+}
+
+.CollapseArrow {
+  background: none !important;
+}
+
+.SelectList {
+  padding: 0;
+  margin: 0;
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+
+.Categories {
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.ShowCategories {
+  max-height: 30rem;
+  padding: 1rem 0;
+}
+
+.HideCategories {
+  max-height: 0;
+}
+
+.SelectListItem {
+  list-style: none;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    padding: 1rem;
+
+    &:hover {
+      background: $blue-300;
+      border-radius: 4px;
+    }
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    color: $blue-700;
+    display: flex;
+  }
+
+  hr {
+    background-color: #ebe8fd;
+    border: 1px solid #ebe8fd;
+    border-radius: 55px;
+  }
+}
+.NoMatches {
+  padding: 1rem 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: $blue-700;
+}

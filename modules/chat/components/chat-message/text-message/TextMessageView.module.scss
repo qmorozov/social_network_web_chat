@@ -1,0 +1,23 @@
+@use '../../../../../styles/variables';
+
+.wrapper {
+  padding: variables.rem(14px) variables.rem(24px);
+}
+
+.message__content {
+  margin: 0;
+  line-height: variables.rem(18px);
+  letter-spacing: 0.01em;
+
+  a {
+    font-weight: 500;
+    line-height: variables.rem(25px);
+    text-decoration-line: underline;
+    color: #2490ff;
+  }
+}
+
+.meta {
+  float: right;
+  margin-left: variables.rem(12px);
+}

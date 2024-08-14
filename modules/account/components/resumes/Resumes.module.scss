@@ -1,0 +1,88 @@
+.Resume {
+  width: 100%;
+  border: 1px solid #ededfc;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.ResumeTitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #001f7a;
+  margin-bottom: 8px;
+}
+
+.Address {
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #455587;
+  margin-bottom: 24px;
+}
+
+.Description {
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  color: #001f7a;
+}
+
+.Attachment {
+  margin-bottom: 1.5rem;
+  img {
+    border-radius: 4px;
+  }
+}
+
+.Footer {
+  a {
+    display: block;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  & > a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.ResumeActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0 0 0;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    a {
+      all: unset;
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      margin-left: 0.75rem;
+    }
+  }
+}
+.LikesCount {
+  display: flex;
+  align-items: center;
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    line-height: 1;
+    font-size: 14px;
+  }
+}

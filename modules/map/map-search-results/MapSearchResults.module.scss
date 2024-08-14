@@ -1,0 +1,143 @@
+@import 'styles/variables';
+
+.SearchResults {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    $margin: 1.25rem;
+
+    &:not(:first-of-type) {
+      margin-top: $margin;
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #ededfc;
+      padding-bottom: $margin;
+    }
+  }
+}
+
+.SearchResultInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.75rem 1rem 0.75rem 1.25rem;
+  margin-right: 0.25rem;
+  border-radius: 0.5rem;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    background: $blue-300;
+  }
+
+  .BusinessLogo {
+    $size: 3.25rem;
+    display: block;
+    width: $size;
+    height: $size;
+    border-radius: 0.5rem;
+    margin-right: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .BusinessInfo {
+    min-width: 0;
+    margin-right: auto;
+  }
+
+  .BusinessName {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    max-width: 170px;
+  }
+
+  .BusinessSchedule {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #455587;
+  }
+
+  .BusinessOptions {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    svg {
+      stroke: none;
+    }
+  }
+}
+
+.SearchResultOffers {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 1.25rem 0 1.25rem;
+
+  > li {
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .SearchResultOffer {
+    display: block;
+  }
+
+  .SearchResultOfferPrice {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .SearchResultOfferDescription {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+  }
+
+  .AllOffersButton {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background: #ededfc;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+  }
+}
+
+.DropdownOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.ModalBody > div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.HoveredCompany {
+  background-color: $blue-300;
+}

@@ -1,0 +1,77 @@
+@use '../../../../../styles/variables';
+
+.wrapper {
+  overflow: hidden;
+
+  & + & {
+    margin-top: 4px;
+  }
+}
+
+.textWrapper {
+  padding: variables.rem(14px) variables.rem(24px) variables.rem(20px);
+}
+
+.textContent {
+  display: block;
+  margin-bottom: variables.rem(12.5px);
+  word-break: break-word;
+}
+
+.WithAvatar {
+  margin: 0.75rem 0;
+}
+
+.UserName {
+  margin: 0;
+}
+
+.SenderInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+
+  & > div {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+.SenderInfoRight {
+  justify-content: flex-end;
+}
+
+.reply {
+  display: flex;
+  align-items: center;
+  gap: variables.rem(10px);
+  padding: variables.rem(16px) variables.rem(24px);
+  border-bottom: variables.rem(1px) solid #fff;
+
+  &User {
+    display: flex;
+    align-items: center;
+    gap: variables.rem(12px);
+
+    div {
+      width: variables.rem(20px);
+      height: variables.rem(20px);
+      border-radius: 100%;
+    }
+
+    span {
+      display: block;
+      font-size: variables.rem(12px);
+      line-height: variables.rem(16px);
+      user-select: none;
+    }
+  }
+}
+
+

@@ -1,0 +1,11 @@
+.Arrow {
+  svg {
+    transition: all 150ms ease-in-out;
+  }
+}
+
+.OpenItem {
+  svg {
+    transform: rotateZ(180deg);
+  }
+}

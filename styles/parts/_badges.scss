@@ -1,0 +1,19 @@
+@use '../variables';
+
+.pill {
+  display: inline-block;
+  background: variables.$badge-bg;
+  padding: variables.rem(13px) variables.rem(20px);
+  line-height: variables.rem(14px);
+  letter-spacing: 0.01em;
+  border-radius: variables.rem(20px);
+  font-size: variables.rem(13px);
+  white-space: nowrap;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    background: rgba(variables.$badge-bg, 0.1);
+  }
+}

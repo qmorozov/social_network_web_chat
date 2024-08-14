@@ -1,0 +1,150 @@
+@import '../../../styles/parts/badges';
+@import '../../../styles/variables';
+
+.PageTitle {
+  padding: 37px 0 11px;
+}
+
+.button {
+  padding: 11px 24px;
+  color: $blue-700;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 18px;
+  background: #f6f6fe;
+}
+
+.SettingsContainer {
+  padding: 0 8vw 2.5rem;
+}
+
+.SettingsDropdown {
+  position: relative;
+  margin: 3.5rem 0 5rem 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    height: 3px;
+    width: 100%;
+    background: $blue-300;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    height: 3px;
+    width: 100%;
+    background: $blue-300;
+  }
+}
+
+.SettingsSelect {
+  position: relative;
+}
+
+.SettingsTitle {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $blue;
+  margin: 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+//.SettingsDevices {
+//  display: flex;
+//  align-items: center;
+//  justify-content: space-between;
+//  margin-top: 1.5rem;
+//
+//  a {
+//    display: flex;
+//    align-items: center;
+//    cursor: pointer;
+//    text-decoration: none;
+//    width: 100%;
+//    justify-content: space-between;
+//
+//    svg {
+//      width: 10px;
+//      height: 100%;
+//      transition: all 200ms;
+//    }
+//
+//    &:hover {
+//      svg {
+//        transform: translateX(3px);
+//      }
+//    }
+//  }
+//
+//  p,
+//  span {
+//    color: $blue-800;
+//    line-height: 18px;
+//  }
+//
+//  p {
+//    font-size: 14px;
+//    font-weight: 600;
+//    margin: 0;
+//  }
+//
+//  span {
+//    font-size: 13px;
+//    font-weight: 300;
+//  }
+//}
+
+.SettingsHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SettingsOption {
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    color: $blue;
+    margin: 0;
+  }
+}
+
+.SettingsLangOption {
+  button {
+    all: unset;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    color: $blue;
+  }
+}
+
+.SettingsFilter {
+  margin: 1.5rem 0 2.5rem 0;
+  padding: 0 36px;
+
+  input {
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    line-height: 1;
+    color: $blue;
+  }
+}
+
+.Button {
+  all: unset;
+  width: 100%;
+}

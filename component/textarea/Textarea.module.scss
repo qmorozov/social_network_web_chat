@@ -1,0 +1,13 @@
+@use '../../styles/variables';
+
+.textarea {
+  min-height: variables.rem(139px);
+  line-height: variables.rem(20px);
+  resize: none;
+
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+}

@@ -1,0 +1,129 @@
+@import '../../styles/variables';
+
+.OfferContainer {
+  //padding: 2.25rem 8vw;
+  padding: 0 44px;
+}
+
+.CustomPopupStyle {
+  padding-bottom: 0;
+}
+
+.PopupCustomHeader {
+  position: fixed;
+  top: 52px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  padding: 28px 0 1.5rem 0;
+  transform: translateY(-3.5rem);
+  z-index: 99;
+  background: #fff;
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+
+  * {
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+  }
+}
+
+.PopupChat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.PopupAvatar {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+.PopupCompanyInfo {
+  width: 100%;
+}
+
+.PopupHeaderInfo {
+  margin-left: 1rem;
+  width: 100%;
+
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &,
+    * {
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+
+  span {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 12ch;
+    margin-right: 3px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    margin-bottom: 2px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 15ch;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.PopupHeaderButtons {
+  & > div {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue-300;
+    }
+  }
+
+  & > div + div {
+    margin-left: 0.5rem;
+  }
+}
+
+.OpenChatButton {
+  text-transform: uppercase;
+  border: unset;
+  border-radius: 55px;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: $blue-700;
+  color: #fff;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 2.5rem;
+  right: 3.5rem;
+}

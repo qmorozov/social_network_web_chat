@@ -1,0 +1,157 @@
+@import '../../styles/variables';
+
+.Modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba($color: #000000, $alpha: 0.15);
+}
+
+.OpenModal {
+  animation: fadeIn 300ms forwards;
+}
+
+.CloseModal {
+  animation: fadeOut 300ms forwards;
+}
+
+.ModalBodySlideIn {
+  animation: slideUp 300ms forwards;
+}
+
+.ModalBodySlideOut {
+  animation: slideDown 300ms forwards;
+}
+
+.ModalBody {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 1rem;
+  max-width: 30rem;
+  max-height: 80vh;
+  padding: 1rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    top: 55%;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 55%;
+  }
+}
+
+.List {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 100%;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+
+  & > li {
+    flex: 0 1 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: $blue-300;
+      cursor: pointer;
+    }
+
+    p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 8ch;
+      white-space: nowrap;
+      font-size: 0.75rem;
+      margin: 0.25rem 0 0 0;
+      font-weight: 600;
+    }
+  }
+}
+
+.ModalBodyWrapper {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.ModalHeader {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem 0.75rem 0.5rem;
+}
+
+.Search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+
+  svg {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    border: none;
+    color: $blue-800;
+  }
+}
+
+.ShareSocials {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: $blue-300;
+    cursor: pointer;
+  }
+}

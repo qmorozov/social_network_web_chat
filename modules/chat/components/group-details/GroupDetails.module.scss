@@ -1,0 +1,80 @@
+@use '../../../../styles/variables';
+
+.GroupDetailsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: variables.rem(18px) variables.rem(20px) variables.rem(5px);
+  margin-bottom: variables.rem(35px);
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: variables.rem(30px);
+    user-select: none;
+    cursor: pointer;
+
+    span {
+      font-family: Manrope, sans-serif;
+      font-weight: 500;
+      font-size: variables.rem(14px);
+      line-height: 140%;
+      color: variables.$blue-800;
+    }
+  }
+}
+
+.Input input {
+  background: none;
+}
+
+.GroupDetails {
+  padding: 0 variables.rem(16px) variables.rem(16px) 0;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(variables.rem(27.5px));
+
+  .AddBtn {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    gap: variables.rem(8px);
+    padding: variables.rem(9px) variables.rem(16px);
+    font-family: Manrope, sans-serif;
+    font-weight: 500;
+    font-size: variables.rem(13px);
+    line-height: variables.rem(18px);
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &DetailsInput {
+    padding: 0 variables.rem(20px);
+  }
+
+  .AddPhoto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: variables.rem(32px) variables.rem(5px);
+    font-family: Manrope, sans-serif;
+    font-size: variables.rem(12px);
+    font-weight: 700;
+    line-height: variables.rem(16px);
+    letter-spacing: 0.06em;
+    color: variables.$blue;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  :global {
+    .icon-new-group,
+    .icon-new-channel {
+      stroke: none;
+    }
+
+    .icon-a-right-white {
+      height: inherit;
+    }
+  }
+}

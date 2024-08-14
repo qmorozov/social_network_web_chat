@@ -1,0 +1,101 @@
+@use '../../../../styles/variables';
+
+.Wrapper {
+  margin-top: variables.rem(40px);
+}
+
+.Salary {
+  display: grid;
+  grid-template-columns: 1.3fr 0.93fr 0.5fr;
+  grid-column-gap: variables.rem(6px);
+}
+
+.SelectOption {
+  font-size: variables.rem(14px);
+  line-height: variables.rem(19px);
+  letter-spacing: 0.04em;
+  color: variables.$blue-700;
+}
+
+.Attachment {
+  margin-bottom: 1.5rem;
+  img {
+    border-radius: 4px;
+  }
+}
+
+.addPhoto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 32px 0;
+  cursor: pointer;
+
+  h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #2c0bcb;
+    margin: 0;
+  }
+}
+
+.SearchAddress {
+  display: flex;
+  align-items: center;
+  padding: 5px 5px variables.rem(20px) 5px;
+
+  input {
+    border: none;
+    padding: 0 5px;
+    width: 100%;
+    font-size: variables.rem(14px);
+    line-height: variables.rem(14px);
+    letter-spacing: 0.02em;
+    color: variables.$blue-800;
+
+    &::placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+    }
+  }
+}
+
+.Location {
+  display: flex;
+  justify-content: space-between;
+  margin-top: variables.rem(32px);
+
+  &Title {
+    margin: 0;
+    font-weight: 600;
+    font-size: variables.rem(14px);
+    line-height: variables.rem(19px);
+  }
+
+  &SubTitle {
+    margin: 4px 0 0 0;
+    font-weight: 300;
+    font-size: variables.rem(13px);
+    line-height: variables.rem(18px);
+    letter-spacing: 0.04em;
+  }
+}
+
+.AddBtn {
+  margin-top: 0 !important;
+  margin-bottom: auto !important;
+  padding: variables.rem(13px) variables.rem(24px) !important;
+  width: fit-content !important;
+  max-width: variables.rem(73px) !important;
+
+  &.Disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

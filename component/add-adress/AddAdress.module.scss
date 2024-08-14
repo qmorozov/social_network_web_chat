@@ -1,0 +1,19 @@
+.MapContainer {
+  min-height: 300px;
+  height: 100%;
+  position: relative;
+}
+.ShowMeIcon {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 2;
+  cursor: pointer;
+}

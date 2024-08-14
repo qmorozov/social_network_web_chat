@@ -1,0 +1,12 @@
+@use '../../styles/variables';
+
+.title {
+  margin-top: variables.rem(40px);
+  font-size: variables.rem(16px);
+  font-weight: 700;
+  line-height: variables.rem(22px);
+}
+
+.subtitle {
+  margin-bottom: variables.rem(24px);
+}

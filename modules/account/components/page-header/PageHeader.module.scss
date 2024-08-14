@@ -1,0 +1,35 @@
+@use '../../../../styles/variables';
+
+.ActionBtn {
+  display: flex;
+  align-items: center;
+  gap: variables.rem(50px);
+
+  &Edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: variables.rem(40px);
+    height: variables.rem(40px);
+    border-radius: 100%;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #eaeaf4;
+    }
+  }
+}
+
+.UserMenuModalBody {
+  border-radius: variables.rem(16px) 0 variables.rem(16px) variables.rem(16px);
+}
+
+.userMenuOptionsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: variables.rem(14px);
+  font-weight: 500;
+  line-height: variables.rem(20px);
+}

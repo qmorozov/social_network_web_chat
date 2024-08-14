@@ -1,0 +1,20 @@
+@use '../../../styles/variables';
+
+.wrapper {
+  margin-top: variables.rem(40px);
+}
+
+.title {
+  margin: 0 0 variables.rem(24px) 0;
+  font-size: variables.rem(16px);
+  font-weight: 700;
+  line-height: variables.rem(22px);
+}
+
+.items > * {
+  margin-bottom: variables.rem(16px);
+
+  &:last-child {
+    margin-bottom: variables.rem(40px);
+  }
+}

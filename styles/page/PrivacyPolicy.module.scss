@@ -1,0 +1,41 @@
+@use '../../styles/variables';
+
+.wrapper {
+  margin-top: variables.rem(40px);
+}
+
+.list {
+  padding: 0;
+  margin: variables.rem(40px) 0 0 0;
+
+  &Title {
+    margin: 0;
+    max-width: variables.rem(445px);
+    font-weight: 700;
+    font-size: variables.rem(20px);
+    line-height: variables.rem(29px);
+    letter-spacing: -0.01em;
+  }
+}
+
+.list {
+  margin-top: variables.rem(40px);
+
+  h2 {
+    display: block;
+    margin: 0;
+    font-size: variables.rem(14px);
+    font-weight: 600;
+    line-height: variables.rem(20px);
+  }
+
+  p {
+    display: block;
+    margin: variables.rem(16px) 0 variables.rem(40px) 0;
+    letter-spacing: 0.02em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

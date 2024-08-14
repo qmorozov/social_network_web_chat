@@ -1,0 +1,58 @@
+.SearchBlock {
+  margin: 1.5rem 0 2.5rem 0;
+  display: flex;
+
+  input {
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    line-height: 1;
+    color: #001f7a;
+  }
+}
+
+.BlockLocation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.Btn {
+  max-width: 73px;
+  max-height: 44px;
+  padding: 13px 24px;
+  margin: 0;
+}
+
+.CurrentLocationTitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #001f7a;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.CurrentLocation {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #001f7a;
+  margin: 0;
+}
+
+.MapBlock {
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.ShowMapBlock {
+  max-height: 600px;
+  padding: 1rem 0;
+}
+
+.HideMapBlock {
+  max-height: 0;
+}

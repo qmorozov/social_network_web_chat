@@ -1,0 +1,52 @@
+@use '../../../../styles/variables';
+
+.wrapper {
+  margin: auto;
+  width: 100%;
+  max-width: variables.rem(416px);
+  height: fit-content;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: variables.rem(32px);
+  font-weight: 700;
+  line-height: variables.rem(46px);
+  letter-spacing: -0.01em;
+}
+
+.text {
+  margin: variables.rem(16px) 0 0 0;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #455587;
+}
+
+.button {
+  margin-top: variables.rem(72px);
+}
+
+.offer__button {
+  cursor: pointer;
+  margin-top: variables.rem(32px);
+  font-size: variables.rem(12px);
+  line-height: variables.rem(16px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    margin-right: 2px;
+  }
+
+  :global .icon-a-right {
+    width: variables.rem(15px);
+    height: variables.rem(10px);
+  }
+}

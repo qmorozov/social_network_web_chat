@@ -1,0 +1,42 @@
+@use '../../../styles/variables';
+
+.cropImageWrapper {
+  margin-top: variables.rem(40px);
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  padding: variables.rem(11px) variables.rem(24px);
+  margin: 0;
+  border: none;
+  background-color: variables.$blue-700;
+  border-radius: variables.rem(55px);
+  cursor: pointer;
+  user-select: none;
+
+  span {
+    margin-right: variables.rem(8px);
+    font-size: variables.rem(13px);
+    font-weight: 500;
+    line-height: variables.rem(18px);
+    color: white;
+  }
+
+  :global .icon-a-right {
+    stroke: white;
+  }
+
+  &.disabled {
+    background-color: #ebe8fd;
+    cursor: not-allowed;
+
+    span {
+      color: variables.$blue-700;
+    }
+
+    :global .icon-a-right {
+      stroke: variables.$blue-700;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../../styles/variables';
+
+.SettingsListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & + & {
+    margin-top: 1.5rem;
+  }
+
+  p,
+  span {
+    color: $blue-800;
+    line-height: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  span {
+    font-size: 13px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,36 @@
+@use '../../styles/variables';
+
+.wrapper {
+  text-align: center;
+}
+
+.qrCode {
+  margin: variables.rem(40px) auto 0;
+  width: variables.rem(200px);
+  height: variables.rem(200px);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.subtitle {
+  margin: variables.rem(56px) 0 0 0;
+  font-size: variables.rem(16px);
+  font-weight: 700;
+  line-height: variables.rem(22px);
+}
+
+.list {
+  margin: variables.rem(8px) 0 variables.rem(40px) 0;
+  padding: 0;
+}
+
+.listItem {
+  margin: 0 auto;
+  width: fit-content;
+  font-weight: 300;
+  line-height: variables.rem(26px);
+  letter-spacing: 0.04em;
+}

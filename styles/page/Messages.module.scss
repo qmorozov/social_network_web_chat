@@ -1,0 +1,398 @@
+@import '../variables';
+
+.ChatList {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+  overflow: scroll;
+}
+
+.FavoriteChatListWrapper {
+  padding: 0 0 0 2px;
+  margin-bottom: 20px;
+
+  ul::-webkit-scrollbar {
+    height: 0;
+  }
+}
+
+.FavoriteChatList {
+  display: flex;
+  overflow: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 12px 0;
+  cursor: grab;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    width: 120px;
+    position: relative;
+    border-radius: 8px;
+    transition: background-color .3s ease-in-out;
+
+    .ChatListItemUnreadBadge {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-weight: 700;
+      font-size: 13.2871px;
+      line-height: 18px;
+    }
+
+    &:hover {
+      background-color: rgba(246, 246, 254, 0.5);
+    }
+  }
+
+  & > div:not(:last-of-type) {
+    margin-right: 25px;
+  }
+}
+
+.FavoriteChatItemName {
+  margin-top: 16px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.ChatListItemUnread {
+  .ChatListItemPreview {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #001f7a;
+  }
+}
+
+.ChatListItemActive {
+  background: #f6f6fe !important;
+}
+
+.ChatItemSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+
+  input {
+    appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 0.5px solid $blue-800;
+    cursor: pointer;
+  }
+
+  input:checked {
+    background: #2490ff;
+    border-color: #2490ff;
+  }
+}
+
+.OnSelectMenu {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  background: #fff;
+  padding: 0.75rem 0.25rem 0.25rem 0.25rem;
+
+  button + button {
+    margin-left: 5px;
+  }
+
+  button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 140%;
+    padding: 6px 15px;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 200ms;
+
+    &:hover {
+      background: #f6f6fe;
+    }
+
+    &:not(:last-child) svg {
+      margin-right: 12px;
+    }
+
+    & svg {
+      margin-right: 12px;
+    }
+  }
+}
+
+.ChatListItem {
+  padding: 6px 20px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: center;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+
+  &:hover {
+    background: rgba(246, 246, 254, 0.5);
+  }
+}
+
+.ChatListItemAvatar {
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ChatListItemInfo {
+  flex-grow: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ChatListItemName {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+
+.ChatListItemPreview {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #455587;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ChatListItemDate {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  color: #80879e;
+  margin-bottom: 4px;
+}
+
+.ChatListItemStatus {
+}
+
+.ChatListItemUnreadBadge {
+  background: #2490ff;
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+  display: inline-flex;
+  height: 20px;
+  align-items: center;
+  min-width: 20px;
+  justify-content: center;
+}
+
+.ChatListItemBadges {
+  margin-top: 12px;
+  margin-left: 20px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.ChatProfileTitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 48px;
+}
+
+.ChatProfileAvatarWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.ChatProfileAvatar {
+  width: 270px;
+  height: 270px;
+  flex-shrink: 0;
+}
+
+.ChatProfileName {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #001f7a;
+  margin-bottom: 1rem;
+}
+
+.ChatProfileDescription {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #455587;
+
+  div {
+    margin-bottom: 8px;
+  }
+}
+
+.ChatProfileOpenHours {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #455587;
+}
+
+.ChatProfileActions {
+  display: flex;
+  justify-content: center;
+  margin: 34px 0 0;
+  padding: 0;
+
+  li {
+    width: 102px;
+    list-style: none;
+    text-align: center;
+  }
+
+  button {
+    display: inline-flex;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #001f7a;
+    align-items: center;
+    background: none;
+    border: none;
+
+    :global {
+      .icon {
+        margin-right: 12px;
+      }
+
+      .icon-like {
+        fill: none;
+      }
+    }
+  }
+}
+
+.ChatListItemDropdownHeader {
+  li {
+    position: relative;
+    z-index: 999;
+  }
+}
+
+.ChatListItemDropdownBody {
+  position: absolute;
+  min-width: unset;
+  width: 100%;
+  border-radius: 1rem 0 1rem 1rem;
+}
+
+.ChatListItemDropdownItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ChatListItemDropdownPosition {
+  top: 100%;
+  right: 0;
+}
+
+.OnContextMenuOpen {
+  position: relative;
+  z-index: 999;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.1s ease-in-out;
+}
+
+.Loader {
+  top: 30px;
+  left: 50%;
+}
+
+.BackArrow {
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 300ms ease-in-out;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: $blue-300;
+  }
+}
+
+.Back {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+
+  button {
+    border: none;
+    background: none;
+  }
+
+  span {
+    font-size: 1rem;
+    display: block;
+    margin-left: 0.5rem;
+    font-weight: 500;
+  }
+}

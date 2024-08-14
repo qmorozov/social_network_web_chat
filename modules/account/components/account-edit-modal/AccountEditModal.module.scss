@@ -1,0 +1,39 @@
+@use '../../../../styles/variables';
+
+.AccountEditModalItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: variables.rem(14px);
+  font-weight: 500;
+  line-height: variables.rem(20px);
+}
+
+.AccountEditModalBody {
+  border-radius: 0 variables.rem(16px) variables.rem(16px) variables.rem(16px);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: variables.rem(64px);
+  height: variables.rem(64px);
+  background-color: #2700e5;
+  border-radius: variables.rem(55px);
+  transition: all 0.2s ease-in-out;
+
+  :global .icon-plus {
+    stroke: white;
+    stroke-width: 1.5px;
+    transition: inherit;
+  }
+}
+
+.ModalOpen {
+  background-color: white;
+
+  :global .icon-plus {
+    stroke: variables.$blue-700;
+    transform: rotate(-135deg);
+  }
+}

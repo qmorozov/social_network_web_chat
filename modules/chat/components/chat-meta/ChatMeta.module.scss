@@ -1,0 +1,21 @@
+@use '../../../../styles/variables';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  user-select: none;
+}
+
+.time {
+  font-size: variables.rem(11px);
+  font-weight: 200;
+  line-height: variables.rem(15px);
+  letter-spacing: 0.02em;
+  color: variables.$blue-800;
+}
+
+.outgoingStatus {
+  display: inline-block;
+  margin-left: variables.rem(12px);
+}

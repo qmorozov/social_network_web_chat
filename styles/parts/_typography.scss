@@ -1,0 +1,10 @@
+@use '../variables';
+
+.sideTitle {
+  font-size: variables.rem(24px);
+  font-weight: 600;
+  line-height: variables.rem(33px);
+  letter-spacing: -0.02em;
+  margin: variables.rem(4px) 0 variables.rem(16px) 0;
+  padding: 0;
+}

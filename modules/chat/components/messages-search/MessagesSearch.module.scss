@@ -1,0 +1,78 @@
+@use '../../../../styles/variables';
+
+.SearchBlock {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  min-height: variables.rem(76px);
+  margin-bottom: variables.rem(24px);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(27.5px);
+}
+
+.WrapperContent {
+  padding: 0 variables.rem(36px) 0 variables.rem(20px);
+}
+
+.SearchInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: variables.rem(17px);
+  margin-bottom: variables.rem(32px);
+  background: #fff;
+
+  .BtnBack {
+    display: flex;
+  }
+
+  input {
+    flex-grow: 1;
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-size: variables.rem(14px);
+    letter-spacing: 0.02em;
+    color: variables.$blue-800;
+    padding: 0 variables.rem(16px);
+
+    &::placeholder {
+      display: flex;
+      align-items: center;
+      font-size: inherit;
+      font-weight: 200;
+      letter-spacing: inherit;
+      color: inherit;
+    }
+  }
+}
+
+.Action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: variables.rem(28px) variables.rem(36px) variables.rem(24px)
+    variables.rem(20px);
+
+  .Btn {
+    background: none;
+    width: variables.rem(40px);
+    height: variables.rem(40px);
+    padding: 0;
+
+    &:hover {
+      background: #f6f6fe;
+    }
+  }
+}
+
+.BtnSearch {
+  background: none;
+  width: variables.rem(56px);
+  height: variables.rem(56px);
+  padding: 0;
+
+  &:hover {
+    background: #f6f6fe;
+  }
+}

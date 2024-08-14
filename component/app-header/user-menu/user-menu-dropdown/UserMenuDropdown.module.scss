@@ -1,0 +1,48 @@
+@import '../../../../styles/variables';
+
+.UserMenuDropdownMainOpen > div > div {
+  background: #eaeaf4;
+}
+
+.UserMenuDropdownBody {
+  border-radius: 1rem 0 1rem 1rem !important;
+
+  & > div + div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.UserMenuDropdownBodyPosition {
+  top: 100%;
+  right: 0;
+  transform: translate(-0.8rem, 1.3rem);
+}
+
+.UserMenuDropdownItem {
+  font-size: 14px;
+  font-weight: 500;
+  color: $blue-800;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 2.25rem;
+}
+
+.UserMenuDropdownButton {
+  all: unset;
+  padding: 10px 24px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $blue-700;
+  border-radius: 0.5rem;
+
+  & + & {
+    margin-left: 4px;
+  }
+
+  &:hover {
+    font-weight: 600;
+    background: #ededfc;
+  }
+}

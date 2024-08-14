@@ -1,0 +1,60 @@
+@use '../../styles/variables';
+
+.appHeader {
+  background: variables.$main-bg;
+  height: 5rem;
+  flex-basis: 5rem;
+  flex-shrink: 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 1px solid variables.$line-color;
+}
+
+.appHeaderNoBorder {
+  border-bottom: 1px solid white;
+}
+
+.appHeaderUserSide {
+  justify-content: flex-end;
+  padding: 0 variables.$p-full;
+}
+
+.appHeaderLogoSide {
+  padding: 0 variables.$p-full;
+}
+
+.appHeaderMenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activeMenu {
+  color: variables.$blue-700;
+
+  :global .icon {
+    stroke: variables.$blue-700;
+  }
+}
+
+.headerItem {
+  display: flex;
+  align-items: center;
+
+  span {
+    line-height: 16px;
+  }
+
+  :global .icon {
+    margin-right: 12px;
+  }
+}

@@ -1,0 +1,164 @@
+@import '../../../../styles/variables';
+
+.Filter {
+  margin-top: 0px;
+}
+
+.Title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #001f7a;
+}
+
+.Checkbox {
+  display: flex;
+  margin-top: 12px;
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #001f7a;
+    margin-left: 12px;
+  }
+}
+
+.WeekendsWrapper {
+  margin-top: 2.5rem;
+}
+
+.Day.SelectedDay {
+  &:hover {
+    background: #d4ccfa;
+  }
+}
+
+.SelectedDay {
+  background: #d4ccfa;
+}
+
+.Time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.75rem 0;
+}
+
+.TimePickerWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.15);
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    padding: 0.5rem;
+    max-height: 10rem;
+    overflow-y: scroll;
+  }
+
+  li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+    color: $blue-700;
+
+    &:hover {
+      background-color: $blue-300;
+    }
+  }
+}
+
+.OpenUp {
+  top: unset;
+  bottom: 90%;
+}
+
+.Listbox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-left: none;
+  border-right: none;
+  border-top: 3px solid #ededfc;
+  border-bottom: 3px solid #ededfc;
+
+  button {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    cursor: pointer;
+    color: $blue-700;
+    font-size: 14px;
+    line-height: 1;
+    padding: 1.75rem 0;
+    font-weight: 600;
+  }
+}
+
+.Select {
+  overflow-y: scroll;
+  max-height: 10rem;
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.Option {
+  list-style: none;
+  padding: 1rem 0.5rem;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    background: $blue-300;
+  }
+}
+
+.SelectedTime {
+  background-color: $blue-500;
+  &:hover {
+    background-color: $blue-500 !important;
+  }
+}
+
+.TimeBlock {
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.ShowTime {
+  max-height: 60rem;
+  padding: 1rem 0;
+}
+
+.HideTime {
+  max-height: 0rem;
+}
+
+.Disabled {
+  opacity: 0.5;
+  cursor: auto !important;
+  pointer-events: none;
+}

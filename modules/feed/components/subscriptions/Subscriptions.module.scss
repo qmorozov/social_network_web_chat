@@ -1,0 +1,73 @@
+.BlockBusiness {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.BlockAvatarName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.BlockAvatar {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+}
+
+.NameBusiness {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #001f7a;
+  text-transform: capitalize;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.Btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #001f7a;
+  padding: 8px 16px;
+  border-radius: 18px;
+  width: initial;
+  text-transform: capitalize;
+  margin-top: initial;
+  transition: all 300ms ease-in-out;
+  border: none;
+  border-radius: 3.5rem;
+  cursor: pointer;
+}
+
+.BtnUnsubscribe {
+  background: #f6f6fe;
+
+  &:hover {
+    background: #eaeaf4;
+  }
+}
+
+.BtnSubscribe {
+  background: #99e7ff;
+
+  &:hover {
+    background: #2490ff;
+  }
+}
+
+.OfferBusinesses {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

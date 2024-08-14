@@ -1,0 +1,52 @@
+@use '../../../../styles/variables';
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.Photo {
+  width: variables.rem(320px);
+  height: variables.rem(320px);
+  font-size: variables.rem(32px);
+}
+
+.PhotoWrapper {
+  position: relative;
+  margin: variables.rem(40px) auto 0;
+
+  &:hover .Content span {
+    opacity: 1;
+  }
+}
+
+.Content {
+  span {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    font-size: variables.rem(12px);
+    line-height: variables.rem(16px);
+    letter-spacing: 0.08em;
+    color: #455587;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 200ms;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+  right: variables.rem(35px);
+  cursor: pointer;
+  z-index: 2;
+}

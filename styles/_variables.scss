@@ -1,0 +1,31 @@
+$max-width: 1920px;
+
+$line-color: rgba(0, 31, 122, 0.2);
+$line-style: 1px solid $line-color;
+
+$main-bg: #fff;
+
+$p-full: 3.5rem;
+$p-outside: 2.25rem;
+$p-inside: 1.25rem;
+
+$font-color: #001f7a;
+
+$blue: #2c0bcb;
+$light-blue: #f6f6fe;
+
+$light-indigo: #d4ccfa;
+$badge-bg: rgba(0, 31, 122, 0.04);
+
+$blue-300: #ededfc;
+$blue-500: #d4ccfa;
+$blue-700: #2700e5;
+$blue-800: #001f7a;
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function rem($num) {
+  @return (strip-unit($num) / 16) * 1rem;
+}

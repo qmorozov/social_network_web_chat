@@ -1,0 +1,54 @@
+@use '../../../../styles/variables';
+
+.Offer {
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: variables.rem(32px);
+    height: variables.rem(32px);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: variables.$blue-300;
+    }
+  }
+}
+
+.OfferAccount {
+  display: flex;
+  align-items: center;
+  column-gap: variables.rem(16px);
+  margin-right: auto;
+  margin-left: variables.rem(10px);
+}
+
+.Avatar {
+  width: variables.rem(40px);
+  height: variables.rem(40px);
+}
+
+.CompanyName {
+  max-width: variables.rem(300px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.BackArrow {
+  cursor: pointer;
+  padding: variables.rem(8px);
+  transition: all 300ms ease-in-out;
+  height: variables.rem(40px);
+  width: variables.rem(40px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: variables.$blue-300;
+  }
+}

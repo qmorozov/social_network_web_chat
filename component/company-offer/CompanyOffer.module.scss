@@ -1,0 +1,111 @@
+@use '../../styles/variables';
+
+.Offer {
+  width: 100%;
+}
+
+.Attachment {
+  width: 100%;
+  height: 100%;
+  max-height: 360px;
+  margin-bottom: variables.rem(1.5rem);
+
+  img {
+    width: 100%;
+    height: 100%;
+    max-height: inherit;
+    border-radius: 4px;
+  }
+}
+
+.OfferPrice {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  cursor: pointer;
+}
+
+.OfferDescription {
+  font-size: 14px;
+  line-height: 25px;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.Footer {
+  a {
+    display: block;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  & > a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.OfferActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0 0 0;
+
+  & > div > div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    a {
+      all: unset;
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      margin-left: 0.75rem;
+    }
+  }
+}
+.LikesCount {
+  display: flex;
+  align-items: center;
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    line-height: 1;
+    font-size: 14px;
+  }
+}
+
+.Share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LikesAndShare {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Outline {
+  border: 1px solid #ededfc;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.OpenChat {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+

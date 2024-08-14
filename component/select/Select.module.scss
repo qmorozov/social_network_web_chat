@@ -1,0 +1,174 @@
+@use '../../styles/variables';
+
+.wrapper {
+  width: variables.rem(350px);
+  background-color: white;
+  box-shadow: 0 0 variables.rem(6px) #becadb;
+  border-radius: variables.rem(16px);
+  opacity: 0;
+  animation: slide 200ms forwards ease-in-out 50ms;
+
+  ul {
+    margin: 0;
+    list-style: none;
+  }
+
+  mark {
+    color: #2490ff;
+    background: none;
+  }
+}
+
+.Input {
+  display: flex;
+  align-items: center;
+  padding: variables.rem(15px) variables.rem(18px) variables.rem(15px)
+    variables.rem(10px);
+
+  input {
+    width: 100%;
+    padding: variables.rem(5px) variables.rem(10px) variables.rem(5px);
+    font-size: variables.rem(14px);
+    line-height: variables.rem(14px);
+    letter-spacing: 0.02em;
+    color: variables.$blue-800;
+    border: none;
+
+    &::placeholder {
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+    }
+  }
+}
+
+.MainList {
+  max-height: variables.rem(300px);
+  overflow: auto;
+}
+
+.SubList {
+  padding: 0 0 0 variables.rem(15px);
+}
+
+.ItemName {
+  position: relative;
+  display: block;
+  padding: variables.rem(16px) variables.rem(10px);
+  cursor: pointer;
+  transition: 200ms;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    right: variables.rem(10px);
+    content: '';
+    width: variables.rem(8px);
+    height: variables.rem(5px);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7 1L4 4L1 1' stroke='%232C0BCB'/%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    border-radius: variables.rem(4px);
+    transform: translateY(-50%) rotate(-90deg);
+    transition: 200ms;
+  }
+
+  &.open::before {
+    transform: rotate(180deg);
+  }
+
+  &.alone::before {
+    opacity: 0.5;
+  }
+
+  &.alone:hover::before {
+    margin-right: -3px;
+  }
+
+  &:hover {
+    background-color: #f5f6fa;
+  }
+}
+
+.ItemList {
+  padding: 0 0 0 variables.rem(10px);
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: variables.rem(16px) variables.rem(10px);
+    transition: 200ms;
+    border-radius: 4px;
+    cursor: pointer;
+
+    :global .icon-angle-right {
+      stroke-width: 0.5px;
+      stroke: variables.$blue-800;
+      transition: 200ms;
+    }
+
+    span {
+      font-size: variables.rem(14px);
+      font-weight: 400;
+      line-height: variables.rem(19px);
+      letter-spacing: 0.04em;
+    }
+
+    &:hover {
+      background-color: #f5f6fa;
+
+      :global .icon-angle-right {
+        transform: translateX(4px);
+      }
+    }
+  }
+}
+
+.Option {
+  position: relative;
+  padding: variables.rem(16px) variables.rem(10px);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 200ms;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: variables.rem(10px);
+    content: '';
+    width: variables.rem(8px);
+    height: variables.rem(5px);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7 1L4 4L1 1' stroke='%232C0BCB'/%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    border-radius: variables.rem(4px);
+    transform: translateY(-50%) rotate(-90deg);
+    transition: 200ms;
+  }
+
+  &:hover {
+    background-color: #f5f6fa;
+
+    :global .icon-angle-right {
+      transform: translateX(4px);
+    }
+
+    &::before {
+      margin-right: -3px;
+    }
+  }
+
+  * {
+    margin: 0;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

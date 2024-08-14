@@ -1,0 +1,38 @@
+@use '../../../../styles/variables';
+
+.Wrapper {
+  padding-bottom: variables.rem(48px);
+}
+
+.Tab {
+  color: variables.$font-color;
+  background-color: rgba(0, 31, 122, 0.04);
+  border-radius: variables.rem(55px);
+  padding: variables.rem(13px) variables.rem(24px);
+  border: none;
+  margin-right: variables.rem(2px);
+  display: flex;
+  align-items: center;
+  gap: variables.rem(8px);
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0, 31, 122, 0.1);
+  }
+
+  &Selected {
+    background-color: rgba(0, 31, 122, 0.1);
+  }
+
+  &List {
+    overflow: auto;
+    flex-wrap: nowrap;
+    display: flex;
+    margin: 40px auto;
+    flex-shrink: 0;
+    width: fit-content;
+    max-width: 100%;
+  }
+}

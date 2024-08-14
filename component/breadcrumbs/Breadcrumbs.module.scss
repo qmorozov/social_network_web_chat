@@ -1,0 +1,44 @@
+@use '../../styles/variables';
+
+.wrapper {
+  position: absolute;
+  top: variables.rem(48px);
+  left: variables.rem(56px);
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.crumbs {
+  position: relative;
+  padding-right: variables.rem(14px);
+  margin-right: variables.rem(8px);
+  list-style: none;
+  opacity: 0.5;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: '/';
+    right: 0;
+  }
+
+  &:last-child {
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &.current {
+    cursor: initial;
+    color: variables.$blue-800;
+    opacity: 1;
+    pointer-events: none;
+  }
+}

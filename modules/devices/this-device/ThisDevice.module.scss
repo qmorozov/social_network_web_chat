@@ -1,0 +1,28 @@
+@use '../../../styles/variables';
+
+.wrapper {
+  margin-top: variables.rem(40px);
+}
+
+.title {
+  margin: 0 0 variables.rem(24px) 0;
+  font-size: variables.rem(16px);
+  font-weight: 700;
+  line-height: variables.rem(22px);
+}
+
+.button {
+  width: 100%;
+  padding: variables.rem(18px);
+  margin-top: variables.rem(32px);
+  font-size: variables.rem(12px);
+  font-weight: 400;
+  line-height: variables.rem(16px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: variables.$blue;
+  border: none;
+  border-radius: variables.rem(8px);
+  background-color: #ededfc;
+  cursor: pointer;
+}

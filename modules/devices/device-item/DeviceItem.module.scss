@@ -1,0 +1,58 @@
+@use '../../../styles/variables';
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.device__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: variables.rem(16px);
+  width: variables.rem(48px);
+  height: variables.rem(48px);
+  border-radius: 100%;
+  background-color: variables.$light-blue;
+  background-repeat: no-repeat;
+
+  img {
+    max-width: variables.rem(14px);
+    max-height: variables.rem(14px);
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+  }
+
+  &.online {
+    background-color: #ccf3ff;
+  }
+}
+
+.info {
+  margin-right: auto;
+}
+
+.title {
+  margin: 0;
+  font-size: variables.rem(14px);
+  font-weight: 600;
+  line-height: variables.rem(19px);
+  user-select: none;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  font-weight: 300;
+  line-height: variables.rem(20px);
+  letter-spacing: 0.04em;
+  user-select: none;
+}

@@ -1,0 +1,9 @@
+@import '../../../styles/variables';
+
+.ActiveFilter > a {
+  background-color: $blue-500;
+
+  &:hover {
+    background-color: $blue-500;
+  }
+}

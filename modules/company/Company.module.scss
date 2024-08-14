@@ -1,0 +1,38 @@
+.Wrapper {
+  padding: 0 0 3rem 0;
+}
+
+.SearchResultOffers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  > li {
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .SearchResultOffer {
+    display: block;
+  }
+
+  .SearchResultOfferPrice {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .SearchResultOfferDescription {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.ListItem + .ListItem {
+  margin-top: 3rem;
+}

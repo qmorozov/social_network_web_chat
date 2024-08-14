@@ -1,0 +1,27 @@
+.UserMenuMain {
+  display: flex;
+  align-items: center;
+
+  strong {
+    cursor: pointer;
+    margin-right: 14px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.Avatar {
+  width: 32px !important;
+  height: 32px !important;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.Name {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

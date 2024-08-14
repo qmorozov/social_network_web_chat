@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.Dot {
+  position: relative;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background: $blue-800;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+  }
+
+  &::before {
+    top: -7px;
+  }
+
+  &::after {
+    bottom: -7px;
+  }
+}
+
+.Main {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 200ms;
+  position: relative;
+  z-index: 10;
+
+  &:hover {
+    background: #eaeaf4;
+  }
+}
+
+.MainOpen > div {
+  background: #eaeaf4;
+}

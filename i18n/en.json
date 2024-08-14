@@ -1,0 +1,643 @@
+{
+  "_": {
+    "next": "Next",
+    "login": "Log in"
+  },
+  "phone-country": {
+    "ext": "ext.",
+    "country": "Phone number country",
+    "phone": "Phone",
+    "AB": "Abkhazia",
+    "AC": "Ascension Island",
+    "AD": "Andorra",
+    "AE": "United Arab Emirates",
+    "AF": "Afghanistan",
+    "AG": "Antigua and Barbuda",
+    "AI": "Anguilla",
+    "AL": "Albania",
+    "AM": "Armenia",
+    "AO": "Angola",
+    "AQ": "Antarctica",
+    "AR": "Argentina",
+    "AS": "American Samoa",
+    "AT": "Austria",
+    "AU": "Australia",
+    "AW": "Aruba",
+    "AX": "Åland Islands",
+    "AZ": "Azerbaijan",
+    "BA": "Bosnia and Herzegovina",
+    "BB": "Barbados",
+    "BD": "Bangladesh",
+    "BE": "Belgium",
+    "BF": "Burkina Faso",
+    "BG": "Bulgaria",
+    "BH": "Bahrain",
+    "BI": "Burundi",
+    "BJ": "Benin",
+    "BL": "Saint Barthélemy",
+    "BM": "Bermuda",
+    "BN": "Brunei Darussalam",
+    "BO": "Bolivia",
+    "BQ": "Bonaire, Sint Eustatius and Saba",
+    "BR": "Brazil",
+    "BS": "Bahamas",
+    "BT": "Bhutan",
+    "BV": "Bouvet Island",
+    "BW": "Botswana",
+    "BY": "Belarus",
+    "BZ": "Belize",
+    "CA": "Canada",
+    "CC": "Cocos (Keeling) Islands",
+    "CD": "Congo, Democratic Republic of the",
+    "CF": "Central African Republic",
+    "CG": "Congo",
+    "CH": "Switzerland",
+    "CI": "Cote d'Ivoire",
+    "CK": "Cook Islands",
+    "CL": "Chile",
+    "CM": "Cameroon",
+    "CN": "China",
+    "CO": "Colombia",
+    "CR": "Costa Rica",
+    "CU": "Cuba",
+    "CV": "Cape Verde",
+    "CW": "Curaçao",
+    "CX": "Christmas Island",
+    "CY": "Cyprus",
+    "CZ": "Czech Republic",
+    "DE": "Germany",
+    "DJ": "Djibouti",
+    "DK": "Denmark",
+    "DM": "Dominica",
+    "DO": "Dominican Republic",
+    "DZ": "Algeria",
+    "EC": "Ecuador",
+    "EE": "Estonia",
+    "EG": "Egypt",
+    "EH": "Western Sahara",
+    "ER": "Eritrea",
+    "ES": "Spain",
+    "ET": "Ethiopia",
+    "FI": "Finland",
+    "FJ": "Fiji",
+    "FK": "Falkland Islands",
+    "FM": "Federated States of Micronesia",
+    "FO": "Faroe Islands",
+    "FR": "France",
+    "GA": "Gabon",
+    "GB": "United Kingdom",
+    "GD": "Grenada",
+    "GE": "Georgia",
+    "GF": "French Guiana",
+    "GG": "Guernsey",
+    "GH": "Ghana",
+    "GI": "Gibraltar",
+    "GL": "Greenland",
+    "GM": "Gambia",
+    "GN": "Guinea",
+    "GP": "Guadeloupe",
+    "GQ": "Equatorial Guinea",
+    "GR": "Greece",
+    "GS": "South Georgia and the South Sandwich Islands",
+    "GT": "Guatemala",
+    "GU": "Guam",
+    "GW": "Guinea-Bissau",
+    "GY": "Guyana",
+    "HK": "Hong Kong",
+    "HM": "Heard Island and McDonald Islands",
+    "HN": "Honduras",
+    "HR": "Croatia",
+    "HT": "Haiti",
+    "HU": "Hungary",
+    "ID": "Indonesia",
+    "IE": "Ireland",
+    "IL": "Israel",
+    "IM": "Isle of Man",
+    "IN": "India",
+    "IO": "British Indian Ocean Territory",
+    "IQ": "Iraq",
+    "IR": "Iran",
+    "IS": "Iceland",
+    "IT": "Italy",
+    "JE": "Jersey",
+    "JM": "Jamaica",
+    "JO": "Jordan",
+    "JP": "Japan",
+    "KE": "Kenya",
+    "KG": "Kyrgyzstan",
+    "KH": "Cambodia",
+    "KI": "Kiribati",
+    "KM": "Comoros",
+    "KN": "Saint Kitts and Nevis",
+    "KP": "North Korea",
+    "KR": "South Korea",
+    "KW": "Kuwait",
+    "KY": "Cayman Islands",
+    "KZ": "Kazakhstan",
+    "LA": "Laos",
+    "LB": "Lebanon",
+    "LC": "Saint Lucia",
+    "LI": "Liechtenstein",
+    "LK": "Sri Lanka",
+    "LR": "Liberia",
+    "LS": "Lesotho",
+    "LT": "Lithuania",
+    "LU": "Luxembourg",
+    "LV": "Latvia",
+    "LY": "Libya",
+    "MA": "Morocco",
+    "MC": "Monaco",
+    "MD": "Moldova",
+    "ME": "Montenegro",
+    "MF": "Saint Martin (French Part)",
+    "MG": "Madagascar",
+    "MH": "Marshall Islands",
+    "MK": "North Macedonia",
+    "ML": "Mali",
+    "MM": "Burma",
+    "MN": "Mongolia",
+    "MO": "Macao",
+    "MP": "Northern Mariana Islands",
+    "MQ": "Martinique",
+    "MR": "Mauritania",
+    "MS": "Montserrat",
+    "MT": "Malta",
+    "MU": "Mauritius",
+    "MV": "Maldives",
+    "MW": "Malawi",
+    "MX": "Mexico",
+    "MY": "Malaysia",
+    "MZ": "Mozambique",
+    "NA": "Namibia",
+    "NC": "New Caledonia",
+    "NE": "Niger",
+    "NF": "Norfolk Island",
+    "NG": "Nigeria",
+    "NI": "Nicaragua",
+    "NL": "Netherlands",
+    "NO": "Norway",
+    "NP": "Nepal",
+    "NR": "Nauru",
+    "NU": "Niue",
+    "NZ": "New Zealand",
+    "OM": "Oman",
+    "OS": "South Ossetia",
+    "PA": "Panama",
+    "PE": "Peru",
+    "PF": "French Polynesia",
+    "PG": "Papua New Guinea",
+    "PH": "Philippines",
+    "PK": "Pakistan",
+    "PL": "Poland",
+    "PM": "Saint Pierre and Miquelon",
+    "PN": "Pitcairn",
+    "PR": "Puerto Rico",
+    "PS": "Palestine",
+    "PT": "Portugal",
+    "PW": "Palau",
+    "PY": "Paraguay",
+    "QA": "Qatar",
+    "RE": "Reunion",
+    "RO": "Romania",
+    "RS": "Serbia",
+    "RU": "Russia",
+    "RW": "Rwanda",
+    "SA": "Saudi Arabia",
+    "SB": "Solomon Islands",
+    "SC": "Seychelles",
+    "SD": "Sudan",
+    "SE": "Sweden",
+    "SG": "Singapore",
+    "SH": "Saint Helena",
+    "SI": "Slovenia",
+    "SJ": "Svalbard and Jan Mayen",
+    "SK": "Slovakia",
+    "SL": "Sierra Leone",
+    "SM": "San Marino",
+    "SN": "Senegal",
+    "SO": "Somalia",
+    "SR": "Suriname",
+    "SS": "South Sudan",
+    "ST": "Sao Tome and Principe",
+    "SV": "El Salvador",
+    "SX": "Sint Maarten",
+    "SY": "Syria",
+    "SZ": "Swaziland",
+    "TA": "Tristan da Cunha",
+    "TC": "Turks and Caicos Islands",
+    "TD": "Chad",
+    "TF": "French Southern Territories",
+    "TG": "Togo",
+    "TH": "Thailand",
+    "TJ": "Tajikistan",
+    "TK": "Tokelau",
+    "TL": "Timor-Leste",
+    "TM": "Turkmenistan",
+    "TN": "Tunisia",
+    "TO": "Tonga",
+    "TR": "Turkey",
+    "TT": "Trinidad and Tobago",
+    "TV": "Tuvalu",
+    "TW": "Taiwan",
+    "TZ": "Tanzania",
+    "UA": "Ukraine",
+    "UG": "Uganda",
+    "UM": "United States Minor Outlying Islands",
+    "US": "United States",
+    "UY": "Uruguay",
+    "UZ": "Uzbekistan",
+    "VA": "Holy See (Vatican City State)",
+    "VC": "Saint Vincent and the Grenadines",
+    "VE": "Venezuela",
+    "VG": "Virgin Islands, British",
+    "VI": "Virgin Islands, U.S.",
+    "VN": "Vietnam",
+    "VU": "Vanuatu",
+    "WF": "Wallis and Futuna",
+    "WS": "Samoa",
+    "XK": "Kosovo",
+    "YE": "Yemen",
+    "YT": "Mayotte",
+    "ZA": "South Africa",
+    "ZM": "Zambia",
+    "ZW": "Zimbabwe",
+    "ZZ": "International"
+  },
+  "userMenu": {
+    "qrCode": "QR-Code",
+    "privacyPolicy": "Privacy Policy",
+    "faq": "FAQ",
+    "logOut": "Log out",
+    "no": "NO",
+    "yes": "YES"
+  },
+  "auth": {
+    "title": "Login",
+    "auth-phone": {
+      "title": "A quick Check-In",
+      "sub-title": "We’ll send a SMS to verify your number. No fees will apply"
+    },
+    "auth-code": {
+      "title": "Verification code",
+      "sub-title": "We sent you a verification code via SMS"
+    },
+    "auth-name": {
+      "title": "Let's get to know each other",
+      "sub-title": "A little bit",
+      "i-name-placeholder": "First Name and Last Name.."
+    }
+  },
+  "privacy-policy": {
+    "title": "Privacy Policy",
+    "sub-title": "What information does the Application obtain and how is it used?"
+  },
+  "faq": {
+    "title": "FAQ",
+    "btn-text": "Ask a Question",
+    "content": {
+      "title": "We’re here to help you with anyting and everything",
+      "sub-title": "If you can't find the answer, text us"
+    }
+  },
+  "feed": {
+    "title": "Feed",
+    "subscribe-btn": "Subscribe",
+    "unsubscribe-btn": "Unsubscribe",
+    "search-placeholder": "Search by name or title...",
+    "subscriptions-title": "Subscriptions",
+    "offerMenu": {
+      "save": "Save",
+      "unsubscribe": "Unsubscribe"
+    }
+  },
+  "crop-image": {
+    "upload-a-photo": "Upload a photo"
+  },
+  "account": {
+    "title": "Account",
+    "add-photo": "Add a photo →",
+    "adding-a-photo": "Adding a Photo",
+    "add-a-company": "Add a company",
+    "add-photo-button": "Add",
+    "add-cv": "Add a CV",
+    "edit-cv": "Edit a CV",
+    "add-offer": "Add an offer",
+    "add-cv-button": "Add",
+    "website": "website",
+    "tabs": {
+      "offers": "Offers",
+      "resumes": "Resumes",
+      "description": "Description"
+    },
+    "add-an-offer": {
+      "briefly-describe-your-placeholder": "Briefly describe your..",
+      "price-per-placeholder": "Price per..",
+      "month-placeholder": "Month",
+      "add-location-placeholder": "Add location",
+      "attaching-a-photo": "Attaching a photo",
+      "attach-a-photo": "Attach a photo",
+      "add-photo": "Add Photo",
+      "no-info": {
+        "titleBtn": "add my first offer",
+        "title": "Add your offer <br/> to get new customers",
+        "subtitle": "It will help to attract more customers <br/> and get more trust"
+      }
+    },
+    "add-description": {
+      "title": "Add description",
+      "briefly-describe": "Briefly describe what the company does..",
+      "web-site": "Web-site..",
+      "e-mail": "E-mail..",
+      "name": "Name",
+      "phone-number": "Phone Number..",
+      "company-is-for-sale": "Company is for sale",
+      "no-the-company": "No, the company isn’t selling"
+    },
+    "description": {
+      "title": "Description",
+      "web-site": "Web-site:",
+      "e-mail": "E-mail:",
+      "phone-number": "Phone Number:",
+      "working-hours": "Working Hours:",
+      "location": "Location:",
+      "sale-status": "Sale Status:",
+      "for-sale": "For sale",
+      "not-for-sale": "Not for sale",
+      "no-info": {
+        "title": "Add more info",
+        "subtitle": "More information equals more trust"
+      }
+    },
+    "add-a-cv": {
+      "specialization-placeholder": "Specialization..",
+      "briefly-describe-your-experience-placeholder": "Briefly describe your experience..",
+      "salary-from-placeholder": "Salary From..",
+      "salary-to-placeholder": "To..",
+      "map-input-placeholder": "Search for Address..",
+      "add-button": "Add",
+      "my-current-location": "My current location:",
+      "add-an-adress-placeholder": "Add an Adress"
+    },
+    "headerDropdown": {
+      "company": "Company",
+      "mainUser": "Main user",
+      "create": "Create new company",
+      "createInfo": "To add new account"
+    }
+  },
+  "company": {
+    "title": "Company",
+    "chat": "Chat",
+    "add-logo": "Add a logo →",
+    "tabs": {
+      "offers": "Offers",
+      "description": "Description",
+      "team": "Team",
+      "vacancies": "Vacancies"
+    },
+    "breadcrumbs": {
+      "edit-a-vacancy": "Edit a vacancy",
+      "adding-a-vacancy": "Adding a vacancy"
+    },
+    "add-job": {
+      "title": "Add a Vacancy",
+      "no-info": {
+        "title": "Add a Vacancy",
+        "subtitle": "Team members can see messages <br/> and create new posts"
+      }
+    },
+    "addingALogoPageTitle": "Adding a Logo",
+    "companyAddingVacancy": "Adding a Logo"
+  },
+  "favorites": {
+    "title": "Favorites"
+  },
+  "tabs": {
+    "messages": "Messages",
+    "companies": "Companies",
+    "people": "People",
+    "media": "Media",
+    "files": "Files",
+    "links": "Links",
+    "liked": "Liked",
+    "voice": "Voice"
+  },
+  "chat": {
+    "title": "Chat",
+    "search-chat-placeholder": "Search chat...",
+    "status": {
+      "online": "Online",
+      "lastSeenRecently": "Last seen recently",
+      "members": "Members:",
+      "isOnline": "is online"
+    },
+    "empty": {
+      "title": "Find your <br /> first contact on the map",
+      "text": "Right next to you",
+      "button": "Search on Map",
+      "offer-button": "OR add your first offer"
+    },
+    "message-preview": {
+      "file": "File",
+      "image": "Image",
+      "audio": "Audio"
+    }
+  },
+  "create-chat": {
+    "group-details": {
+      "title": "Group details",
+      "btn-add": "Add",
+      "add-photo": "Add A Photo",
+      "placeholder": "Enter group name.."
+    },
+    "new-chat": {
+      "title": "New chat",
+      "new-group": {
+        "title": "New Group",
+        "subtitle": "A private chat"
+      },
+      "new-channel": {
+        "title": "New Channel",
+        "subtitle": "A channel you can subscribe to"
+      }
+    }
+  },
+  "chatMenu": {
+    "shareChat": "Share Chat",
+    "inviteUsers": "Invite Users",
+    "muteNotifications": "Mute Notifications",
+    "clearMessages": "Clear my Messages"
+  },
+  "accountEditMenu": {
+    "addAPost": "Add a Post",
+    "addAPhoto": "Add a Photo",
+    "addACV": "Add a CV",
+    "editACV": "Edit a CV",
+    "addAnOffer": "Add an Offer"
+  },
+  "companyMenu": {
+    "similarCompanies": "Similar companies",
+    "showOnMap": "Show On Map",
+    "share": "Share",
+    "report": "Report",
+    "block": "Block",
+    "delete": "Delete"
+  },
+  "find-first-contact": {
+    "title": "Find your <br/>first contact on the map",
+    "subtitle": "Right next to you",
+    "btn": "Search on Map",
+    "link": "OR add your first offer→"
+  },
+  "map-search": {
+    "title": "Map & Search"
+  },
+  "messages": {
+    "title": "Messages"
+  },
+  "validation": {
+    "phone": {
+      "required": "Phone number is not valid"
+    },
+    "salaryTo": "'SalaryTo' should be greater than 'SalaryFrom'",
+    "required": "This field is required",
+    "code": {
+      "invalid": "Wrong verification code!",
+      "required": "Code from sms is required"
+    },
+    "full-name": "Please write full name here"
+  },
+  "add-company": {
+    "title": "Add a company",
+    "add-btn": "Add",
+    "company-name": {
+      "placeholder": "Company name.."
+    },
+    "company-email": {
+      "placeholder": "Email..."
+    },
+    "category-of-business": {
+      "title": "Category of Business:",
+      "placeholder": "Search for category.."
+    },
+    "add-an-adress": {
+      "title": "Add an Adress:",
+      "placeholder": "Search for Address..",
+      "myCurrentLocation": "My current location"
+    },
+    "specify-working-hours": {
+      "title": "Specify Working hours:"
+    }
+  },
+  "resume": {
+    "title": "Resume",
+    "menu": {
+      "delete": "Delete"
+    },
+    "no-info": {
+      "titleBtn": "add my first resume",
+      "title": "Add your resume <br/> to get new customers",
+      "subtitle": "It will help to attract more customers <br/> and get more trust"
+    }
+  },
+  "vacancy": {
+    "title": "Vacancy",
+    "menu": {
+      "delete": "Delete"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "save": "Save",
+    "languageSearch": "Language search...",
+    "notification": {
+      "title": "Notifications",
+      "desc": "I get nofitications"
+    },
+    "device": {
+      "title": "Devices",
+      "connectedDevices": "connected devices",
+      "this-device-title": "This Device:",
+      "active-sessions-title": "Active sessions:",
+      "terminate-other-sessions-button": "Terminate other sessions",
+      "link-desktop-device-button": "link desktop device",
+      "terminate-session-button": "Terminate Session",
+      "application": "Application:",
+      "ip-address": "IP address:",
+      "location-based-on-the-ip-address": "Location based on the IP address:"
+    },
+    "qr-code": {
+      "title": "QR-Code",
+      "subtitle": "Quick entry by QR-Code",
+      "first-step": "Open Chat from your phone",
+      "second-step": "Open Settings - Devices - Link desktop device",
+      "third-step": "To confirm, point your phone camera at this QR-Code",
+      "button": "Login by phone number"
+    }
+  },
+  "chatListItemDropdown": {
+    "select": "Select",
+    "dialog": "Dialog",
+    "mute": "Mute",
+    "forward": "Forward",
+    "group": "Group",
+    "archive": "Archive",
+    "report": "Report",
+    "delete": "Delete",
+    "pin": "Pin",
+    "unpin": "Unpin"
+  },
+  "messageListItemDropdown": {
+    "select": "Select",
+    "copy": "Copy",
+    "forward": "Forward",
+    "reply": "Reply",
+    "delete": "Delete"
+  },
+  "companyEditModal": {
+    "addAnOffer": "Add an Offer",
+    "addAVacancy": "Add a Vacancy",
+    "addAPhoto": "Add a Photo"
+  },
+  "getMobileApp": {
+    "title": "Download the App",
+    "text": "Browser viewing is not available. But you can download our free mobile app",
+    "app-store": "App store",
+    "google-play": "Google play"
+  },
+  "popup": {
+    "readFullDescription": "Read full description"
+  },
+  "button": {
+    "allOffers": "All offers",
+    "back": "Back to search results",
+    "add": "Add"
+  },
+  "mapCompanyDropdown": {
+    "unsubscribe": "Unsubscribe",
+    "subscribe": "Subscribe",
+    "showOnMap": "Show on map",
+    "similarCompanies": "Similar companies"
+  },
+  "userMenuDropDown": {
+    "statistics": "Statistics",
+    "settings": "Settings"
+  },
+  "shedule": {
+    "closed": "Closed",
+    "open": "Open",
+    "closesAt": "Closed at",
+    "openAt": "Open at"
+  },
+  "companyFilters": {
+    "popular": "Popular",
+    "closest": "Closest",
+    "openNow": "Open now",
+    "whatsAround": "What’s around"
+  },
+  "noMatches": "There are no matches. Try changing your search parameters.",
+  "back": "Back",
+  "selectAChat": "Select a chat",
+  "toStartMessaging": "to start messaging",
+  "searchContactOnMap": "Search for contact on map"
+}

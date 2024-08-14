@@ -1,0 +1,168 @@
+@use '../variables';
+
+.form-footer {
+  margin-top: variables.rem(64px);
+}
+
+.form-control,
+.form-control-code {
+  display: flex;
+  position: relative;
+  width: 100%;
+
+  &:before,
+  &:after {
+    display: block;
+    width: 100%;
+    height: variables.rem(3px);
+    content: '';
+    position: absolute;
+    background-color: #ededfc;
+    border-radius: variables.rem(6px);
+    z-index: 2;
+    transition: background-color .3s ease-in-out;
+  }
+
+  &:focus-within,
+  &.-focused {
+    &:before,
+    &:after {
+      z-index: 3;
+      background-color: #d4ccfa;
+    }
+  }
+
+  &:before {
+    top: variables.rem(-1px);
+  }
+
+  &:after {
+    bottom: variables.rem(-2px);
+  }
+
+  .control {
+    border: none;
+    padding: variables.rem(32px) variables.rem(5px);
+  }
+
+  &.-code-input {
+  }
+
+  &.lastInput::before {
+    display: none;
+  }
+}
+
+.-column {
+  flex-direction: column;
+}
+
+.form-control-code {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-width: variables.rem(552px);
+
+  &.-hasError {
+    &:before,
+    &:after,
+    .form-control:before,
+    .form-control:after {
+      background: rgba(194, 10, 68, 0.55);
+    }
+  }
+
+  &:before {
+    content: none;
+  }
+
+  .control {
+    &:after {
+      content: none;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+  .form-control {
+    flex-grow: 1;
+    width: 20%;
+
+    &:after {
+      content: none;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: variables.rem(8px);
+    }
+  }
+}
+
+.control-validation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: variables.rem(24px);
+  width: 100%;
+
+  position: absolute;
+  top: 100%;
+  margin-top: variables.rem(8px);
+
+  background: rgba(194, 10, 68, 0.55);
+  backdrop-filter: blur(25px);
+  border-radius: variables.rem(12px);
+
+  font-weight: 700;
+  font-size: variables.rem(14px);
+  line-height: variables.rem(15px);
+  color: #fff;
+
+  z-index: 5;
+
+  pointer-events: none;
+
+  &.-tr {
+    border-top-right-radius: 0;
+  }
+
+  &.-tl {
+    border-top-left-radius: 0;
+  }
+}
+
+.control {
+  flex-grow: 1;
+  min-width: variables.rem(32px);
+  font-weight: 600;
+  font-size: variables.rem(16px);
+  line-height: variables.rem(16px);
+  letter-spacing: 0.02em;
+  color: #2c0bcb;
+
+  &::placeholder {
+    font-weight: 200;
+    color: #2c0bcb;
+  }
+
+  &.-center {
+    text-align: center;
+  }
+}
+
+.pre-control {
+  border: none;
+  background: transparent;
+}
+
+.control,
+.pre-control {
+  &.-single {
+    letter-spacing: 0.06em;
+    color: #2c0bcb;
+  }
+}

@@ -1,0 +1,58 @@
+@use '../../../../../styles/variables';
+
+.MemberItem {
+  display: flex;
+  align-items: center;
+  padding: variables.rem(8px);
+  border-radius: variables.rem(12px);
+  cursor: pointer;
+  column-gap: variables.rem(8px);
+  transition: background-color .3s ease-in-out;
+
+  &:first-child {
+    margin-top: variables.rem(20px);
+  }
+
+  & + & {
+    margin-top: variables.rem(8px);
+  }
+
+  &:hover {
+    background-color: variables.$blue-300;
+  }
+
+  p {
+    margin-left: variables.rem(12px);
+    font-weight: 600;
+    font-size: variables.rem(14px);
+    color: variables.$blue-800;
+  }
+}
+
+.MemberAvatar {
+  height: variables.rem(60px);
+  max-width: variables.rem(60px);
+  width: 100%;
+  border-radius: 50%;
+}
+
+.MemberDelete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: auto;
+  width: variables.rem(32px);
+  height: variables.rem(32px);
+  z-index: 100;
+  border-radius: 100%;
+  transition: background-color .3s ease-in-out;
+
+  :global .icon-delete {
+    width: variables.rem(14px);
+  }
+
+  &:hover {
+    background-color: variables.$blue-500;
+  }
+}

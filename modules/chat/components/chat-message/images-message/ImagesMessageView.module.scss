@@ -1,0 +1,85 @@
+@use '../../../../../styles/variables';
+
+.wrapper {
+  display: grid;
+  grid-column-gap: 1.1px;
+  grid-row-gap: 1.1px;
+  border-bottom: 1px solid rgba(variables.$blue-800, 0.1);
+  grid-template-columns: repeat(2, 1fr);
+
+  &.singleImage {
+    display: block;
+  }
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-height: variables.rem(494px);
+  cursor: pointer;
+
+  img,
+  video {
+    display: flex;
+    width: 100%;
+    max-width: inherit;
+    height: 100%;
+    max-height: inherit;
+    object-fit: cover;
+  }
+
+  &:hover .playButton {
+    background-color: rgba(6, 34, 116, 0.4);
+  }
+
+  &:nth-child(2n-1):last-child {
+    grid-column: span 2;
+  }
+}
+
+.playButton {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: variables.rem(17px) variables.rem(24px);
+  background-color: rgba(6, 34, 116, 0.25);
+  backdrop-filter: blur(variables.rem(75px));
+  border-radius: variables.rem(55px);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  :global .icon-play-button {
+    fill: white;
+    stroke: none;
+  }
+
+  span {
+    display: block;
+    margin: 0;
+    font-size: variables.rem(11px);
+    line-height: variables.rem(15px);
+    color: #fff;
+    user-select: none;
+    text-transform: uppercase;
+  }
+
+  .videoDuration {
+    margin-left: variables.rem(16px);
+  }
+}
+
+.hiddenImagesCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: variables.rem(49px);
+  height: auto;
+  font-size: variables.rem(12px);
+  font-weight: 500;
+  line-height: variables.rem(variables.rem(16px));
+  color: #fff;
+  background-color: rgba(6, 34, 116, 0.15);
+}

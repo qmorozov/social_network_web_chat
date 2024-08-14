@@ -1,0 +1,19 @@
+@import '../../../../styles/variables';
+
+.UserMenuDropdownButton {
+  all: unset;
+  padding: 2px 24px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $blue-700;
+  border-radius: 0.5rem;
+
+  & + & {
+    margin-left: 4px;
+  }
+
+  &:hover {
+    font-weight: 600;
+    background: #ededfc;
+  }
+}

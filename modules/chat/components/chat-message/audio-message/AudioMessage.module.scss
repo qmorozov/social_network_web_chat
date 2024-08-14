@@ -1,0 +1,41 @@
+.IconPlay {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: #2700e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.WrapperAudio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0.825rem 1.5rem 0;
+
+  :global {
+    .icon-play {
+      stroke: none;
+    }
+
+    .icon-pause {
+      stroke: #fff;
+    }
+  }
+}
+
+.TimeAudio {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #001f7a;
+}
+
+.Waveform {
+  display: flex;
+  align-items: center;
+}

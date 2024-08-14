@@ -1,0 +1,76 @@
+@import '../../styles/variables';
+
+.Dropdown {
+  position: relative;
+
+  & > button {
+    all: unset;
+    width: 100%;
+  }
+}
+
+.DropdownBody {
+  transform-origin: center;
+  position: absolute;
+  z-index: 50;
+  background: #fff;
+  padding: 20px 4px;
+  border-radius: 10px;
+  min-width: 26rem;
+  z-index: 999999;
+  border-radius: 0 1rem 1rem 1rem;
+}
+
+.DropdownClose {
+  &::before {
+    content: '';
+    position: absolute;
+    top: -4rem;
+    left: -1.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: '✕';
+    position: absolute;
+    top: -4rem;
+    left: -1.5rem;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blue-700;
+    cursor: pointer;
+  }
+}
+
+.DropdownOption {
+  padding: 20px 36px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f5f6fa;
+  }
+}
+
+.Top {
+  top: calc(100% + 1rem);
+}
+
+.Bottom {
+  bottom: calc(100% + 1rem);
+}
+
+.Left {
+  left: -1rem;
+}
+
+.Right {
+  right: -1rem;
+}

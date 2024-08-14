@@ -1,0 +1,36 @@
+.ModalOption {
+  padding: 20px 36px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f5f6fa;
+  }
+}
+
+.ModalBody {
+  transform-origin: center;
+  position: relative;
+  background: #fff;
+  padding: 20px 4px;
+  min-width: 26rem;
+  z-index: 999;
+  border-radius: 1rem;
+  opacity: 0;
+  animation: slide 200ms forwards ease-in-out 50ms;
+}
+
+.Container {
+  & > div + div {
+    z-index: 999 !important;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

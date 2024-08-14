@@ -1,0 +1,82 @@
+@import '../../../../styles/variables';
+
+.Title {
+  display: flex;
+  align-items: center;
+}
+
+.ActionBtn {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  &Edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transition: all 200ms;
+    cursor: pointer;
+
+    &:hover {
+      background: #eaeaf4;
+    }
+  }
+}
+
+.CompanyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  padding: 1rem 0;
+  background: #fff;
+  padding-top: 40px;
+
+  p {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $blue-800;
+    margin: 0 0 0 1rem;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+
+    & > div {
+      //margin-left: auto;
+      min-width: 2.5rem;
+    }
+  }
+}
+
+.Back {
+  height: 40px;
+  max-width: 40px;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms;
+
+  &:hover {
+    background: #eaeaf4;
+  }
+
+  svg {
+    width: 100%;
+    height: 12px;
+  }
+}

@@ -1,0 +1,34 @@
+.Tab {
+  line-height: 14px;
+  color: #001f7a;
+  background: rgba(0, 31, 122, 0.04);
+  border-radius: 55px;
+  padding: 13px 24px;
+  border: none;
+  margin-right: 2px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  span {
+    margin-left: 8px;
+  }
+
+  :global .icon-like {
+    fill: none;
+  }
+}
+
+.TabSelected {
+  background: rgba(0, 31, 122, 0.1);
+}
+
+.TabList {
+  overflow: auto;
+  flex-wrap: nowrap;
+  display: flex;
+  margin-bottom: 32px;
+}

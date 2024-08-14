@@ -1,0 +1,25 @@
+@use '../../../../../styles/variables';
+
+.ItemDescription {
+  margin-bottom: variables.rem(24px);
+
+  .Label {
+    display: block;
+    font-weight: 300;
+    font-size: variables.rem(12px);
+    line-height: variables.rem(16px);
+    letter-spacing: 0.02em;
+    color: variables.$font-color;
+    margin-bottom: variables.rem(4px);
+    user-select: none;
+  }
+  word-break: break-all;
+
+  .Bold {
+    font-weight: 600;
+    font-size: variables.rem(13px);
+    line-height: variables.rem(18px);
+    color: variables.$font-color;
+    margin: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.FindContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .Content {
+    max-width: 416px;
+  }
+
+  .Title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #001f7a;
+    margin-bottom: 16px;
+  }
+
+  .SubTitle {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #455587;
+    margin-bottom: 72px;
+  }
+
+  .AddFirstOffer {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #001f7a;
+    display: block;
+    text-align: center;
+    margin-top: 32px;
+  }
+}

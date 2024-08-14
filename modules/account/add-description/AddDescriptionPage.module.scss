@@ -1,0 +1,8 @@
+@use '../../../styles/variables';
+
+.addButton {
+  display: flex;
+  align-items: center;
+  padding: variables.rem(11px) variables.rem(24px);
+  column-gap: variables.rem(8px);
+}

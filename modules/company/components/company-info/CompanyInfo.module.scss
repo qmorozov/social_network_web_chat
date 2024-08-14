@@ -1,0 +1,46 @@
+@use '../../../../styles/variables';
+
+.AvatarWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+
+  .Avatar {
+    max-width: 100%;
+    max-height: 100%;
+    width: variables.rem(320px);
+    height: variables.rem(320px);
+
+    & > div {
+      font-size: variables.rem(160px);
+    }
+  }
+
+  .Button {
+    position: absolute;
+    bottom: variables.rem(-8px);
+    right: variables.rem(-8px);
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+.Content > span {
+  position: absolute;
+  top: 60%;
+  left: calc(50% - 45px);
+  color: #455587;
+  font-size: variables.rem(12px);
+  line-height: variables.rem(16px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.Logo {
+  width: variables.rem(320px) !important;
+  height: variables.rem(320px) !important;
+  font-size: variables.rem(32px) !important;
+}

@@ -1,0 +1,14 @@
+.OffterList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li:not(:last-child) {
+    border-bottom: 1px solid #ededfc;
+    padding-bottom: 2rem;
+  }
+
+  li:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
